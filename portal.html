@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Syntax</title>
+    <link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header role="banner">
+        <nav id="navbar" role="navigation">
+            <ul>
+                <li><a href="home.html" title="Home">Home</a></li>
+                <li><a href="cast.html" title="Cast">Cast</a></li>
+                <li><a href="videos.html" title="Videos">Videos</a></li>
+                <li><a href="reviews.html" title="Reviews">Reviews</a></li>
+                <li><a href="portal.html" title="Portal">Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <article role="article">
+            <section>
+                <button onclick="openModal()">Open Modal</button>
+
+                <portal class="modal">
+                    <div class="modal-content">
+                        <h1>This is a modal dialog</h1>
+                        <p>Click the button to close the modal</p>
+                        <button onclick="closeModal()">Close Modal</button>
+                    </div>
+                </portal>
+            </section>
+        </article>
+    </main>
+    <footer role="contentinfo">
+        <p>© 2023 Gerard Simonian</p>
+    </footer>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script>
+        function openModal() {
+            document.querySelector('portal').activate();
+        }
+
+        function closeModal() {
+            // Remove the portal element from the DOM
+            document.body.removeChild(document.querySelector('portal'));
+        }
+    </script>
+
+</body>
+
+</html>

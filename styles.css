@@ -1,0 +1,292 @@
+/* html, body {
+	background: #663399;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(107, 107, 132);
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+	background: white;
+	line-height: 1.8;
+}
+h1 {
+	font: 1.6em Verdana, Geneva, sans-serif;
+	margin-bottom: .4em;
+	color: rgb(83, 104, 138);
+}
+h2 {
+	font: 3.2em Georgia, "Times New Roman", Times, serif;
+	margin-bottom: .2em;
+}
+h3 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+}
+a {
+	color: rgb(184, 126, 84);
+}
+a:hover {
+	color: rgb(120, 97, 55);
+}
+pre {
+	font-size: 1.4em;
+	color: white;
+	padding: .5em 1em;
+	border-left: 1em solid #A68048;
+	background: #666;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 80%;
+}
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+table {
+	margin-top: 1em;
+}
+caption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	text-align: left;
+}
+td, th {
+	padding: 10px;
+}
+.center {
+	text-align: center;
+}
+header h2 {
+	padding-bottom: .2em;
+	border-bottom: 1px solid gray;
+}
+aside {
+	padding: 1em;
+	background:rgb(83, 104, 138);
+	color: white;
+	margin-bottom: 1em;
+}
+aside h4 {
+	color: white;
+}
+footer {
+	border-top: 1px solid gray;
+	text-align: center;
+	font-size: .8em;
+	line-height: 4em;
+	margin-top: 1em;
+}
+blockquote {
+	font-style: italic;
+}
+.flowRight {
+	float: right;
+	margin-left: 10px;
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+} 
+*/
+* {
+	margin: auto;
+}
+
+body {
+	background-color: black;
+}
+
+#navbar {
+	background-color: #333;
+	margin: 0 auto 0 auto;
+	width: 100%;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 40%;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#navbar li {
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: red;
+}
+
+
+
+canvas {
+	display: block;
+	margin: 50px auto 50px auto;
+	width: 30%;
+}
+
+#poster {
+	display: block;
+	background-color: blue;
+	margin: 50px auto 50px auto;
+	width: 40%;
+}
+
+.whiteFont {
+	color: white;
+}
+
+#intro {
+	width: 40%;
+	margin: 50px auto 50px auto;
+}
+
+.center {
+	text-align: center;
+}
+
+#castList{
+	width:100%;
+	max-width: 1000px;
+}
+
+.castItem {
+	background-color:rgba(158, 167, 158, 0.461);
+	display: flex;
+	align-items: center;
+	width: 45%;
+	height: 200px;
+	margin: 15px;
+	border-radius: 5%;
+}
+
+#castList ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.castItem img {
+	background-color: gold;
+	width: 35%;
+	height: 70%;
+	margin: 0 0 0 10%;
+	border-radius: 50%;
+}
+
+.castItem li {
+	list-style-type: none;
+	background-color: blue;
+	width: 100px;
+
+}
+
+p {
+	margin: 0 0 0 15px;
+	font-size: 18px;
+}
+
+#reviews{
+	width: 50%;
+	min-width: 500px;
+}
+
+.reviewItem{
+	background-color: rgba(233, 2, 2, 0.317);
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid #fff;
+}
+
+.reviewItem p{
+	font-family: 'Courier New', Courier, monospace;
+}
+h1{
+	color: gold;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 3rem;
+}
+
+h2{
+	color: orange;
+	text-align: center;
+	padding: 0 0;
+	font-size: 1.5rem;
+}
+
+#videos{
+}
+
+iframe{
+	background-color: black;
+	display: flex;
+	margin: 40px auto;
+	width: 80%;
+	max-width: 800px;
+	height: 375px;
+	border: 15px solid red;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+  }
+
+  .modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	padding: 20px;
+  }
+
+footer {
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: #333;
+}
